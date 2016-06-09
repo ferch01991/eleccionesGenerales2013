@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Candidatos</title>
+</head>
+<body>
+<header>
+	<nav>
+		<ul>
+			<li><a href="/">Inicio</a></li>
+			<li><a href="/cantones">Cantones</a></li>
+			<li><a href="/dignidades">Dignidades</a></li>
+			<li><a href="/sobre">Sobre</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section>
+	<h1>Candidatos</h1>
+	<p>Actualmente tenemos registrados: </p>
+	<ul>
+		{% for dato in candidatos%}
+		<li>{{ dato.candidato_nombre }}</li>
+		{% endfor %}
+	</ul>
+</section>
+	
+</body>
+</html>
